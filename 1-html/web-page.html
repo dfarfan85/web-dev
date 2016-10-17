@@ -1,152 +1,136 @@
+<!DOCTYPE html>
 <html>
-	<head>
+<head>
+	<title>My Webpage</title>
+	<style type="text/css">
+		* {
+			font-family: Helvetica;
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-		<title> My Webpage</title>
-		<meta charset="utf-8"/>
-		<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+		}
 
-		<style type="text/css">
-			.container{
-				max-width: 950px;
-				margin: 0 auto;
-				border: 1px solid black;
-				font-size: 1em;
-				padding: 20px;
-			}
-			
-			h1 {
-				
-				text-align: center;
-				
-			}
-			
-			h2 {
-				
-			}
-			
-			p {
-				font-size: 20px;
-			}
+		.wrapper {
+			width: 100%;
+			height: 300px;
+			border: pink 1px dashed;
+			display: flex;
+		}
 
-			.learn-more {
-				width: 180px;
-				height: 60px;
-				background-color:  #4da6ff;
-				color: white;
-				margin:0 auto;
-				display: block;
-				position: relative;
-				vertical-align: middle;
-				text-align: center;
-				border-radius: 5px;
-			}
+		.wrapper div {
+			width: 33.33%;
+			border: black dashed 1px;
+		}
 
-			#first {
-				top: 15px;
-				position: relative;
-				font-size: 25px;
-				font-family: Arial;
+		.one {
+			background-color: green;
+		}
 
-			}
+		.three {
+			background-color: red;
+		}
 
-			a {
-				text-decoration: none;
-				color: white;
-			}
+		table, thead, tr, td{
+			border: 1px black solid;
+		}
+		table{
+			width: 50%;
+			margin: 0 auto;
+			padding: 0px;
+		}
+		td {
+			width: 50px;
+			margin: 0px;
+		}
 
-			.container {
-				background-color: #ffe5e5;
+		thead th{
+			background-color: lightblue;
+			border: 2px black solid;
+		}
+	</style>
+</head>
 
-
-			}
-
-			.parent {
-				height: 350px;
-				width: 350px;
-				background-color: #f2ffe5;
-				margin: 20px auto;
-				border-radius: 10px;
-				padding: 10px;
-			}
-
-			.child {
-
-				width: 56.3px ;
-				height: 56.3px ;
-				border:1px solid #428000;
-				display: inline-block;
-				text-align: center;
-				float: left;
-				margin: 0px;
-
-			}
-
-			table, td {
-				border: 1px solid black;
-				margin: 0px;
-			}
-
-
-			
-
-		</style>
-
-				<script>
-	$(document).ready(function(){
-		makeGrid(6);
-
-
-			console.log("works");
-
-			function makeGrid(gridNum) {
-				for (var row = 0; row < gridNum; row++){
-					for(var column = 0; column < gridNum; column++){
-						$(".parent").append("<div class='child'></div>");
-					}
-				}
-
-				$(".child").css('width', (350 - 2*gridNum)/gridNum);
-				$(".child").css('height', (350 - 2*gridNum)/gridNum);
-
-			}
-
-	});
-			
-			
-		</script>
-
-	</head>
+<body>
 	
-	<body>
-		<div class="container">
-			<h1>Can I afford to buy a home? </h1>
-			
-			<h2> Understanding the market </h2>
-			
-			<p> Step one is to educate yourself on the state and process of the real estate market. This is very important and I cannot stress it enough; education and research is hey! </p>
 
-			<table>
-				<tr>
-					<td>David</td>
-					<td>Blue</td>	
-				</tr>
-				<tr>
-					<td>Patty</td>
-					<td>Pink</td>
-				</tr>
-			</table>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/gTBCHu0btn8" frameborder="0" allowfullscreen></iframe>
 
+	<h1>Watch this Video Now!</h1>
 
-			<div class="learn-more"><p id="first"><a href="http://www.google.com">Learn More</a></p></div>
-		</div>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.
+	</p>
 
-		<div class="parent">
+	<ul>
+		<li>Lorem ipsum dolor</li>
+		<li>Sit amet, consectetur</li>
+		<li>Adipisicing elit, sed</li>
+		<li>Do eiusmod tempor</li>
+		<li>Incididunt ut labore</li>
+		<li>Et dolore magna</li>
+		<li>Aliqua. Ut enim</li>
+		<li>Ad minim veniam,</li>
+		<li>Quis nostrud exercitation</li>
 
-		</div>
+	</ul>
 
+	<ol>
+		<li>Lorem ipsum dolor</li>
+		<li>Sit amet, consectetur</li>
+		<li>Adipisicing elit, sed</li>
+		<li>Do eiusmod tempor</li>
+		<li>Incididunt ut labore</li>
+		<li>Et dolore magna</li>
+		<li>Aliqua. Ut enim</li>
+		<li>Ad minim veniam,</li>
+		<li>Quis nostrud exercitation</li>
 
+	</ol>
+
+	<hr>
+
+	<h2><a href="http://google.com">CLICK HERE NOW!</a></h2>
+	
+	<table>
+		<thead>
+			<tr>
+				<th>radians</th>
+				<th>0</th>
+				<th>&Pi;/6</th>
+				<th>&Pi;/4</th>
+				<th>&Pi;/3</th>
+				<th>&Pi;/2</th>
+			</tr>
+
+		</thead>
+			<tr>
+				<td>sin&Theta;</td>
+				<td>0</td>
+				<td>1/2</td>
+				<td>&radic;2/2</td>
+				<td>&radic;3/2</td>
+				<td>1</td>
+			</tr>
+			<tr>
+				<td>cos&Theta;</td>
+				<td>1</td>
+				<td>&radic;3/2</td>
+				<td>&radic;2/2</td>
+				<td>1/2</td>
+				<td>0</td>
+			</tr>
 		
-	</body>
-	
+	</table>
+
+	<hr>
+	<br>
+	<form action="http://google.com">
+		Enter Name: <input type="text" name="Name">
+		<input type="submit" value="Click Here!"><br>
+		<input type="radio" name="gender" value="male">Male<br>
+		<input type="radio" name="gender" value="female">Female<br>
+	</form>
+	<p>THE END</p>
+</body>
+
+
+
 </html>
